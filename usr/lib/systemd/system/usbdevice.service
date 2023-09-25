@@ -10,6 +10,7 @@ ExecStart=/usr/bin/usbdevice start
 ExecStop=/usr/bin/usbdevice stop
 Environment="PROP_ro_debuggable=1"
 Environment="PROP_ro_secure=0"
+Environment="ADBD_SHELL=/usr/bin/bash"
 
 [Install]
 WantedBy=multi-user.target
