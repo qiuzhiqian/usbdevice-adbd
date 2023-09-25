@@ -1,0 +1,15 @@
+[Unit]
+Description=Manage USB device functions
+DefaultDependencies=no
+After=local-fs.target
+ConditionFileIsExecutable="/usr/bin/adbd"
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/usbdevice start
+ExecStop=/usr/bin/usbdevice stop
+Environment="PROP_ro_debuggable=1"
+Environment="PROP_ro_secure=0"
+
+[Install]
+WantedBy=multi-user.target

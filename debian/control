@@ -1,0 +1,16 @@
+Source: usbdevice-adbd
+Section: unknown
+Priority: optional
+Maintainer: xml <xiamengliang@gmail.com>
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.1.3
+Homepage: https://github.com/qiuzhiqian
+#Vcs-Browser: https://salsa.debian.org/debian/usbdevice-adbd
+#Vcs-Git: https://salsa.debian.org/debian/usbdevice-adbd.git
+
+Package: usbdevice-adbd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+  android-tools-adbd
+Description: android tools adbd usb config
+ this is usb config for android tools adbd
